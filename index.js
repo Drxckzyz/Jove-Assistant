@@ -17,9 +17,7 @@ const client = new Client();
     await database;
 })();
 
-//client.on('warn', e => console.log(e))
-//client.on('debug', e => console.log(e))
-//process.on('unhandledRejection', uj => console.log('Error ' + e))
+process.on('unhandledRejection', e => console.log('Unhandled Rejection: ' + e))
 /*
 const intents = new Intents([
     Intents.NON_PRIVILEGED, // include all non-privileged intents, would be better to specify which ones you actually need
