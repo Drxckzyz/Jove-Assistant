@@ -119,7 +119,7 @@ module.exports = client => {
         await logs.send(new MessageEmbed()
         .setColor('BLUE')
         .setTitle('Member Join!')
-        .setDescription(`This user:\n${member} joined this guild\n${guild}`)
+        .setDescription(`This user:\n${member} joined this guild\n${member.guild}`)
         .addField('Account created at:', `${member.createdAt}`)
         .setTimestamp())
     });

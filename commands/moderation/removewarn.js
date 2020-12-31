@@ -14,7 +14,7 @@ module.exports = class RemovewarnCommand extends BaseCommand {
         return message.channel.send('According to the server statistics You\'re not a moderator!!')
     }
     else if (!mentionedMember) {
-        return message.channel.send('Moderator 101: Mention a user!!!!')
+        return message.channel.send('<:linus:792100393974759447> mention a user idiot')
     }
 
     const warnDoc = await warnmodel.findOne({

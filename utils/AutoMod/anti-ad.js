@@ -30,7 +30,7 @@ module.exports = (client) => {
            const isOurInvite = await isInvites(guild, code)
            if (!isOurInvite) {
             await message.delete()
-            await message.channel.send(`<:linus:792100393974759447> ${member}, No Advertising Discord Server!`).then(msg => {
+            await message.channel.send(`<:linus:792100393974759447> ${member}, No Advertising Discord Servers!`).then(msg => {
                  msg.delete({ timeout: 10000 })
             }).catch(console.error);
               await autowarn(userID, warningID, moderator, date, reason, member, message, client).catch((err) => {console.log(err)})

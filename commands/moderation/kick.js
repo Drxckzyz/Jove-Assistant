@@ -14,7 +14,7 @@ module.exports = class NameCommand extends BaseCommand {
 
         if (!message.member.hasPermission("KICK_MEMBERS")) return //message.reply("This command is restricted to Staff Members!")
         if (!message.guild.me.hasPermission('KICK_MEMBERS')) return message.channel.send('Can you tell Jove give me `KICK_MEMBERS` perms!!')
-        if (!mentionedUser) return message.channel.send('Yh, lemme kick the air real quick!\nPlease mention a user!')
+        if (!mentionedUser) return message.channel.send('<:linus:792100393974759447>, Ima kick u if u dnt mention a user')
 
         const mentionedMember = message.guild.members.cache.get(mentionedUser.id)
 

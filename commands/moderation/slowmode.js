@@ -19,7 +19,7 @@ module.exports = class SlowmodeCommand extends BaseCommand {
             await message.channel.setRateLimitPerUser(0);
             return message.channel.send('Slowmode: off!');
         }
-        if (isNaN(args[0])) return message.channel.send('Number stated is not a number!');
+        if (isNaN(args[0])) return message.channel.send('<:linus:792100393974759447> not a number doe');
         const setTimeto = Number(args[0]);
 
        

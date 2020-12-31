@@ -14,7 +14,7 @@ module.exports = class BanCommand extends BaseCommand {
 
         if (!message.member.hasPermission("BAN_MEMBERS")) return //message.reply("This command is restricted to Staff Members!")
         if (!message.guild.me.hasPermission('BAN_MEMBERS')) return message.channel.send('Can you tell Jove give me `BAN_MEMBERS` perms!!')
-        if (!mentionedUser) return message.channel.send('Yh, lemme ban the air real quick!,\nPlease mention a user!')
+        if (!mentionedUser) return message.channel.send('<:linus:792100393974759447>, Ima ban u if u dnt mention a user')
 
         const allBans = await message.guild.fetchBans()
 

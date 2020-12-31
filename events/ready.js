@@ -6,6 +6,7 @@ const antislurs = require('../utils/AutoMod/anti-slur');
 const amutes = require('../utils/Functions/auto-mutefunc');
 const suggestion = require('../utils/Functions/suggestion')
 const modlogs = require('../utils/Functions/modlogs');
+const antipings = require('../utils/AutoMod/anti-ping');
 const { MessageEmbed } = require('discord.js')
 
 module.exports = class ReadyEvent extends BaseEvent {
@@ -18,11 +19,12 @@ module.exports = class ReadyEvent extends BaseEvent {
         client.user.setActivity('Drxckzyz- | +help', { type: 'WATCHING' })
         await mutes(client)
         await antiad(client)
-        await antilinks(client)
+       // await antilinks(client)
         await antislurs(client)
         await amutes(client)
         await suggestion(client)
         await modlogs(client)
+        await antipings(client)
         await logs.send(new MessageEmbed()
         .setColor('BLUE')
         .setTitle('Bot online!')

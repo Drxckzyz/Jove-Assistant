@@ -19,12 +19,7 @@ module.exports = class UnmuteCommand extends BaseCommand {
             } else {
                 id = args[0]
             }
-            const mentionedPosition = target.roles.highest.position
-           const memberPosition = message.member.roles.highest.position
-    
-           if (memberPosition <= mentionedPosition) {
-               return message.reply('<:linus:792100393974759447> <:linus:792100393974759447><:linus:792100393974759447><:linus:792100393974759447><:linus:792100393974759447><:linus:792100393974759447><:linus:792100393974759447>')
-           }
+           
     
     
             const result = await mutemodel.updateOne({

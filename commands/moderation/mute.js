@@ -16,7 +16,7 @@ module.exports = class MuteCommand extends BaseCommand {
         const msRegex = RegExp(/(\d+(s|m|h|w))/)
         const { guild, author: staff } = message
         const target = message.mentions.users.first() || message.guild.members.cache.get(args[0])
-        if (!target) return message.reply('Please specify a user!')
+        if (!target) return message.reply('<:linus:792100393974759447> please mention a user')
          
         const rawduration = args[1]
         if (!rawduration) return message.reply('Please specify a time `2d|2s|2m|2h|2w`')

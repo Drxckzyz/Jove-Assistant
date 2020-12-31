@@ -16,7 +16,7 @@ module.exports = class WarnCommand extends BaseCommand {
         return message.channel.send('This command is restricted to Staff!')
     } 
     else if (!mentionedmember) {
-        return message.channel.send('You need to mention a member!')
+        return message.channel.send('<:linus:792100393974759447> Mention someone doe')
     } 
 
     
